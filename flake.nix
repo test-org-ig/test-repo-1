@@ -23,7 +23,7 @@
       formatter = forEachSystem (pkgs: pkgs.nixfmt-tree);
 
       packages = forEachSystem (pkgs: {
-        default = pkgs.runCommand "test-repo-1-${rev}" { } ''
+        default = pkgs.runCommand "test-repos-1-${rev}" { } ''
           echo ${rev} > $out
         '';
       });
