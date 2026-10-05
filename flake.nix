@@ -24,7 +24,7 @@
 
       packages = forEachSystem (pkgs: {
         default = pkgs.runCommand "test-repo-1-${rev}" { } ''
-          echo ${revi} > $out
+          echo ${rev} > $out
         '';
       });
     };
